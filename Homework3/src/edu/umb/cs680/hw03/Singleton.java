@@ -2,8 +2,7 @@ package edu.umb.cs680.hw03;
 
 class Singleton {
     private static Singleton single_instance = null;
-
-    private Singleton(){}
+    private Singleton(){};
 
     public static Singleton getInstance()
     {
