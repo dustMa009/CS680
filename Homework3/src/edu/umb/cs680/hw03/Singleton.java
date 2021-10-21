@@ -3,12 +3,7 @@ package edu.umb.cs680.hw03;
 class Singleton {
     private static Singleton single_instance = null;
 
-    public String s;
-
-    private Singleton()
-    {
-        s = "Hello Java.";
-    }
+    private Singleton(){};
 
     public static Singleton getInstance()
     {
