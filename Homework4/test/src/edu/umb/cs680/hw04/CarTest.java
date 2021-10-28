@@ -15,6 +15,8 @@ public class CarTest {
     public void verifyCarEqualityWithMakeModelYear() {
         Car firstCar = new Car("abc", "tesla", 9000, 2010, 1500f);
         Car secondCar = new Car("abc", "tesla", 7000, 2010, 2000f);
+        String[] expected = {"abc", "tesla", "2010"};
+        assertArrayEquals(expected, CarToStringArray(firstCar));
         assertArrayEquals(CarToStringArray(firstCar), CarToStringArray(secondCar));
     }
 }
